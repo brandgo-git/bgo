@@ -45,6 +45,8 @@ const Layout = ({ children }) => {
             font-size: 80px;
             font-weight: 700;
             font-family: sans-serif;
+            line-height: 1;
+            padding: 20px;
           }
         `}
       </style>
