@@ -25,23 +25,29 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
-      >
-        <main>{children}</main>
-        <footer style={{
-          marginTop: `2rem`
-        }}>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.com">Gatsby</a>
-        </footer>
+      <div className="container">
+        <span className="text">COMING SOON</span>
       </div>
+      <style jsx>
+        {`
+          .container {
+            width: 100%;
+            display: flex;
+            overflow: auto;
+            min-height: 100vh;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            background-color: #080808;
+          }
+          .text {
+            color: #ffffff;
+            font-size: 80px;
+            font-weight: 700;
+            font-family: sans-serif;
+          }
+        `}
+      </style>
     </>
   )
 }
